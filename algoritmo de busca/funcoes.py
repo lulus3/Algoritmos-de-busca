@@ -37,4 +37,4 @@ def conectarAtores(atores:list, objetosAtores:list[Ator], listaFilmes:list):
 
 def gerarHeuristica(atores:list, objetosAtores:list[Ator], listaHeuristica:dict):
     for ator in objetosAtores:
-        listaHeuristica[ator.nome] = 1/len(ator.filmes) + 1/len(ator.conexoes)
+        listaHeuristica[ator.nome] = 2/len(ator.filmes) + 2/len(ator.conexoes)
